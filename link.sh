@@ -5,9 +5,9 @@
 
 set -eu
 
-DIST_FILE=$(echo $1|cut -d"/" -f 2)
+TARGET_FILE=$(echo $1|cut -d"/" -f 2)
 
-FROM="$HOME/.applescripts/$DIST_FILE"
-DIST="$HOME/Library/Mobile Documents/com~apple~ScriptEditor2/Documents/$DIST_FILE"
+FROM="$HOME/.applescripts/$TARGET_FILE"
+DIST="$HOME/Library/Mobile Documents/com~apple~ScriptEditor2/Documents/$TARGET_FILE"
 
 ln -s "$FROM" "$DIST"
