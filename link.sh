@@ -5,6 +5,7 @@
 
 set -eu
 
+# ./file_name.scpt -> file_name.scpt
 TARGET_FILE=$(echo $1|cut -d"/" -f 2)
 
 FROM="$HOME/.applescripts/$TARGET_FILE"
